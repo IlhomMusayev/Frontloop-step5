@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    background: #fff;
+    padding: 2.8em;
+    width: 470px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+}
+.destinations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+.line-separation{
+    width: 1.9em;
+    height: 6px;
+    background: #D3E6F4;
+    margin-top: 0px;
+}
+.takeoff h1{
+    font-family: 'Prompt', sans-serif;
+    color: #3B8ACF;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.8em;
+}
+.arrival h1{
+    font-family: 'Prompt', sans-serif;
+    color: #3B8ACF;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.8em;
+}
+.arrival{
+    float: right;
+}
+.takeoff h4{
+    color: #aaa;
+    font-weight: 500;
+    position: relative;
+    top: -1em;
+}
+.takeoff{
+    float: left;
+}
+.arrival h4{
+    float: right;
+    color: #aaa;
+    font-weight: 500;
+    position: relative;
+    top: -1em;
+}
+
+
+.seat{
+    margin-top: 50px;
+    display: flex;
+}
+
+.flght{
+    width: 35%;
+}
+.flght h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+}
+.flght h3{
+    font-weight: 500;
+}
+
+.gate{
+    width: 35%;
+}
+.gate h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+}
+.gate h3{
+    font-weight: 500;
+}
+
+.Seat{
+    width: 35%;
+}
+.Seat h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+}
+.Seat h3{
+    font-weight: 500;
+}
+
+
+
+.about-possenger{
+    display: inline-block;
+}
+
+.possenger h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.possenger h3{
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: none;
+}
+
+
+.class h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.class h3{
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: none;
+}
+
+
+.departure h4{
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 29px;
+}
+.departure h3{
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: none;
+}
+
+
+
+.QR-code{
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+.QR-code img{
+    max-width: 180px;
+}
+
+
+
+@media(max-width: 450px)
+{
+    .seat{  
+        justify-content: center;
+        align-items: center;
+    }
+    .flght{
+        width: 100%;
+    }
+    .gate{
+        width: 100%;
+    }
+    .Seat{
+        width: 100%;
+    }
+    .about-possenger{
+        display: block;
+    }
+    .QR-code{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+        margin-top: 30px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.destinations h1 {
+    color: #3B8ACF;
+    font-family: 'Prompt', sans-serif;
+    font-size: 3.8em;
+}
+
+.destinations h4 {
+    color: #aaa;
+    font-weight: 500;
+    position: relative;
+    top: -1em;
+}
+
+.arrival {
+    text-align: right;
+}
+
+.line-separation {
+    width: 1.9em;
+    height: 6px;
+    background: #D3E6F4;
+}
+
+.flight-infos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-name {
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 0.85em;
+    margin: 2px 0;
+}h4{
+    font-size: 15px;
+}
+
+.info-value {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2.75em 0 1.75em 0;
+}
+
+.info-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background: none;
+    }
+
+    
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line-separation {
+        width: 1em;
+        margin: 0 0.5em;
+    }
+    
+    .info-header {
+        width: 100%;
+        margin-top: 4em;
+    }
+
+    .flight-infos {
+        justify-content: center;
+    }
+
+    .info-side {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .departure {
+        padding-top: 1.5em;
+    }
+
+    .info-qr {
+        margin-top: 4em;
+    }
+
+}
+ */
